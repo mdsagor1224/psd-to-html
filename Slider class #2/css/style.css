@@ -11,6 +11,9 @@
 a{
     transition: .3s;
 }
+.fix{
+    overflow: hidden;
+}
 
 /* header */
 
@@ -112,3 +115,78 @@ ul{
     opacity: 1;
     visibility: visible;
 }
+
+
+/* slider area */
+.single-slide{
+    padding: 175px 0;
+    text-align: center;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.single-slide h4{
+    color: #fff;
+    font-size: 30px;
+}
+.single-slide h2{
+    color: #fff;
+    font-size: 72px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.single-slide a{
+    background: #4272d7;
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 20px 40px;
+    text-decoration: none;
+}
+.slider-area{
+    overflow: hidden;
+    width: 100%;
+}
+
+
+.slider-active .owl-nav button {
+    background: red !important;
+    height: 40px;
+    width: 40px;
+    left: 50px;
+    position: absolute;
+    top: 50%;
+    z-index: 9;
+    text-align: center;
+    line-height: 40px;
+    color: #fff !important;
+}
+.slider-active .owl-nav button.owl-next{
+   right: 50px;
+   left: auto;
+}
+
+.slider-active .owl-dots{
+    bottom: 40px;
+    margin-top: -20px;
+    position: relative;
+    text-align: center;
+    z-index: 999;
+}
+
+.slider-active .owl-dot{
+    background: red !important;
+    border-radius: 100%;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+}
+
+.slider-active button.owl-dot.active {
+    background: blue !important;
+}
+
